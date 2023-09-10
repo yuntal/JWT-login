@@ -7,7 +7,7 @@ In this project, I will demonstrate a successfull login with a JWT-token, and ke
 the flower-power wordpress api. 
 
 
-Goal: To successfully log in and log out. 
+Goal: To successfully log in and log out with a JWT token. 
 
 ## Built With
 
