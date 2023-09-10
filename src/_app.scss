@@ -1,0 +1,316 @@
+
+@import "./scss/custom/custom";
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+.back{
+	color:$primary;
+	text-decoration: underline !important;
+	margin-left:0%;
+}
+.back:hover{
+	color:$primary;
+	opacity:.7;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+
+.card-title{
+	text-align:left;
+	color:$primary;
+	margin-left:-2%;
+}
+
+.loading{
+  text-align:center !important;
+  font-weight:bolder;
+  color:$success;
+}
+
+.error{
+	text-align:center !important;
+	font-weight:bolder;
+	color:$error;
+  }
+
+
+
+div.card#card{
+	width:40rem;
+	margin-left:25%;
+}
+#card-top{
+	margin-left:0%;
+	margin-top:-5%;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+
+.card-top{
+	margin-left:0%;
+	margin-top:-23.2%;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+
+	h1{
+		font-size:1.5em;
+		color:$primary;
+		text-align: center;
+	}
+
+	.name, .last-name, .subject, .email, .text-area{
+     border-radius: 8px;
+	 border:2px solid $primary;
+	 margin-bottom:1rem;
+	}
+
+
+	.name::placeholder, .last-name::placeholder, .subject::placeholder, .email::placeholder, .text-area::placeholder{
+	   color:$tertiary;
+	   opacity:.6;
+	}
+
+
+	.log-out{
+		font-size:1em;
+		width:100px;
+		background: $primary;
+		color:$secondary;
+		border:none;
+		border-radius:8px;
+	}
+
+	.flower-detail{
+		width:800px !important;
+		margin-left:7%;
+	}
+
+/* PRODUCTS */
+
+
+div.card.card{
+    font-family:'Roboto mono';
+	width:140px;
+}
+
+.flowers{
+	display: inline-flex;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    float: left;
+    flex-direction: row;
+	width:600px !important;
+	margin-left:16% !important;
+}
+
+
+
+.profile-title{
+    color:blue;
+    padding:2rem;
+    text-align: left;
+}
+
+.email-title{
+    color:blue;
+    padding:2rem;
+    width:100%;
+}
+
+
+nav {
+	padding: 15px;
+	background: #ccc;
+}
+
+.navbar a {
+	color: $tertiary;
+	opacity:.6;
+	text-decoration: none;
+	margin-left:8%;
+}
+
+form {
+	margin: 1rem auto;
+	padding: 1rem;
+	border-radius: 6px;
+	max-width: 500px;
+}
+.username, .password, .button{
+ border-radius: 8px;
+ border:2px solid $primary;
+ margin-bottom:1rem;
+}
+
+.username::placeholder, .password::placeholder{
+	color:$tertiary;
+	opacity:.6;
+}
+
+a.navbar-brand{
+	color:$primary;
+	margin-left:1%;
+	opacity: none;
+}
+
+.button, .send{
+	font-size:1em;
+	width:100px;
+	background: $primary;
+	color:$secondary;
+	border:none;
+	border-radius:8px;
+}
+
+input,
+textarea {
+	font-size: 1rem;
+	margin-top: 10px;
+	width: 100%;
+	padding: 5px;
+}
+
+textarea {
+	height: 200px;
+}
+
+button {
+	font-size: 1rem;
+	margin-top: 10px;
+}
+
+.container {
+	width: 1100px;
+	margin: 1rem auto;
+}
+
+
+.form-error {
+	color: $error;
+	padding: 0.5rem 1rem;
+}
+
+
+p{
+	color:$primary;
+	margin-bottom:4rem;
+	margin-left:-14%;
+	font-size:1.2em;
+}
+
+
+
+.contact{
+	margin-top:3rem;
+}
+
+.title{
+	color:$error;
+}
+
+.details{
+	color:$primary;
+}
+img{
+	padding-top:2rem;
+	padding-bottom: 2rem;
+	width:50%;
+	margin-left:25%;
+}
+
+p{
+	text-align: center;
+}
+
+#COL{
+	width:150px;
+}
+a.nav-link{
+	text-align: left;
+}
+
+@media (min-width:280px) and (max-width:823px){
+	.flowers{
+		display:grid !important;
+		max-width:100%;
+		margin-left:0% !important;
+	}
+	.flower-detail{
+		margin-left:0% !important;
+		display:grid !important;
+		max-width:100%;
+	}
+	div.card.card, div.card#card{
+		width:100%;
+		padding:0;
+		margin:0;
+		border-top:none !important;
+		border-right:none;
+		border-left:none;
+		border-bottom: 2px solid $primary;
+		margin-bottom:5rem;
+	}
+	div.card#card{
+		width:100%;
+		padding:0;
+		margin:0;
+		border-top:none !important;
+		border-right:none;
+		border-left:none;
+		border-bottom: 2px solid $primary;
+		margin-bottom:5rem;
+		margin-top:2rem;
+	}
+
+	.card-top, .div#card-top{
+    margin-top:auto;
+	}
+}
+
+@media (min-width:824px) and (max-width:1366px){
+	.flowers{
+		display:grid !important;
+		max-width:100%;
+		margin-left:0%;
+	}
+	.flower-detail{
+		display:grid !important;
+		width:100%;
+	}
+	div.card.card{
+		width:100%;
+		padding:0;
+		margin:0;
+		border-top:none !important;
+		border-right:none;
+		border-left:none;
+		border-bottom: 2px solid $primary;
+		margin-bottom:5rem;
+		margin-top:2rem;
+	}
+	div.card#card{
+		width:100%;
+		padding:0;
+		margin:0;
+		border-top:none !important;
+		border-right:none;
+		border-left:none;
+		border-bottom: 2px solid $primary;
+		margin-bottom:5rem;
+		margin-top:2rem;
+	}
+
+	.card-top, .div#card-top{
+    margin-top:auto;
+	}
+}

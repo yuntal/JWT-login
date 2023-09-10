@@ -1,0 +1,1 @@
+export const API = "http://www.designbytalay.com/wp-json/wc/store/products";
